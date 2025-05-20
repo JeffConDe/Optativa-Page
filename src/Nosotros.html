@@ -1,77 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nosotros</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .image-container {
+            overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+        }
+        .image-container img {
+            transition: transform 0.3s ease-in-out; /* Transición suave para el movimiento */
+        }
+        .image-container:hover img {
+            transform: scale(1.1); /* Escala la imagen al 110% al pasar el mouse */
+        }
+    </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
-  <!-- Navbar -->
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="index.html" class="text-2xl font-bold text-blue-700">PsiqueVida</a>
-      <h1 class="text-2xl font-bold text-center text-gray-800">Sobre nosotros</h1>
-      <nav class="space-x-6 flex items-center">
-        <a href="./index.html" class="hover:text-black">Inicio</a>
-        <a href="./Servicios.html" class="hover:text-black">Servicios</a>
-        <a href="./Nosotros.html" class="hover:text-black">Nosotros</a>
-        <a href="./Contacto.html" class="hover:text-black">Contacto</a>
-      </nav>
-    </div>
-  </header>
-
+    <header class="bg-white shadow sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-700 hover:text-blue-900 transition">PsiqueVida</a>
+            <h1 class="text-2xl font-bold text-center text-gray-800 flex-grow">Sobre nosotros</h1>
+            <nav class="space-x-6 flex items-center">
+                <a href="./index.html" class="hover:text-black transition">Inicio</a>
+                <a href="./Servicios.html" class="hover:text-black transition">Servicios</a>
+                <a href="./Nosotros.html" class="hover:text-black transition">Nosotros</a>
+                <a href="./Contacto.html" class="hover:text-black transition">Contacto</a>
+            </nav>
+        </div>
+    </header>
 
 <section class="bg-blue-100 min-h-screen py-12">
-  <!-- Encabezado principal -->
-  <div class="max-w-4xl mx-auto text-center mb-10">
-    <h2 class="text-4xl font-bold text-gray-800 mb-2">Nosotros</h2>
-  </div>
-
-  <!-- Tarjeta principal (con fondo artístico) -->
-  <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-lg overflow-hidden mb-12">
-    <div class="bg-gradient-to-r from-blue-200 via-white to-blue-200 flex items-center justify-center h-48 relative">
-      <!-- Puedes agregar una imagen SVG o PNG decorativa aquí si lo deseas -->
-      <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 z-10">PSIQUIATRÍA <span class="font-light">PRACTICE</span></h3>
+    <div class="max-w-4xl mx-auto text-center mb-10">
+        <h2 class="text-4xl font-bold text-gray-800 mb-2">Nosotros</h2>
     </div>
-    <div class="grid md:grid-cols-2 gap-8 p-8">
-      <!-- Visión -->
-      <div>
-        <h4 class="text-xl font-bold text-gray-700 mb-2">Visión</h4>
-        <p class="text-gray-600">Ser referentes en el cuidado integral de la salud mental, promoviendo el bienestar y la calidad de vida de nuestros pacientes a través de la excelencia clínica y la innovación.</p>
-      </div>
-      <!-- Misión -->
-      <div>
-        <h4 class="text-xl font-bold text-gray-700 mb-2">Misión</h4>
-        <p class="text-gray-600">Brindar atención psiquiátrica ética, humana y personalizada, apoyando a las personas en su proceso de recuperación y crecimiento emocional.</p>
-      </div>
-    </div>
-  </div>
 
-  <!-- Sección de imágenes y dispositivo móvil -->
-  <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8 items-center">
-    <!-- Imagen móvil simulada -->
-    <div class="flex justify-center md:justify-end">
-      <div class="bg-white rounded-2xl shadow-lg p-4 w-48 h-96 flex flex-col items-center justify-center">
-        <div class="w-32 h-64 bg-blue-100 rounded-xl flex items-center justify-center">
-          <span class="text-lg font-semibold text-gray-700">Psychiatry<br><span class="text-blue-600 text-base">Norsoww</span></span>
+    <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-lg overflow-hidden mb-12">
+        <div class="bg-gradient-to-r from-blue-200 via-white to-blue-200 flex items-center justify-center h-48 relative">
+            <h3 class="text-2xl md:text-3xl font-semibold text-gray-800 z-10">PSIQUIATRÍA <span class="font-light">PRACTICE</span></h3>
+            <a href="Contacto.html" class="absolute bottom-6 right-6 bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-800 transition text-sm">Contactanos</a>
         </div>
-      </div>
+        <div class="grid md:grid-cols-2 gap-8 p-8">
+            <div>
+                <h4 class="text-xl font-bold text-gray-700 mb-2">Visión</h4>
+                <p class="text-gray-600 hover:text-gray-800 transition">Ser referentes en el cuidado integral de la salud mental a nivel regional y nacional, promoviendo activamente el bienestar emocional y la calidad de vida de nuestros pacientes a través de la excelencia clínica, la investigación continua y la adopción de enfoques terapéuticos innovadores.</p>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold text-gray-700 mb-2">Misión</h4>
+                <p class="text-gray-600 hover:text-gray-800 transition">Brindar atención psiquiátrica ética, humana, integral y altamente personalizada, apoyando a las personas en su proceso de recuperación, crecimiento personal y fortalecimiento de su salud mental. Nos comprometemos a ofrecer un espacio seguro y de confianza, fomentando la colaboración entre pacientes, familias y profesionales.</p>
+            </div>
+        </div>
     </div>
-    <!-- Imagen 1 -->
-    <div class="flex justify-center">
-      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Terapia" class="rounded-xl shadow w-40 h-56 object-cover">
+
+    <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-8 items-center">
+        <div class="flex justify-center md:justify-end image-container">
+            <div class="bg-white rounded-2xl shadow-lg p-4 w-48 h-96 flex flex-col items-center justify-center">
+                <div class="w-32 h-64 bg-blue-100 rounded-xl flex items-center justify-center">
+                    <span class="text-lg font-semibold text-gray-700 text-center">Psychiatry<br><span class="text-blue-600 text-base">Norsoww</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center image-container">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Terapia" class="rounded-xl shadow w-40 h-56 object-cover">
+        </div>
+        <div class="flex justify-center image-container">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Salud mental" class="rounded-xl shadow w-40 h-56 object-cover">
+        </div>
     </div>
-    <!-- Imagen 2 -->
-    <div class="flex justify-center">
-      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Salud mental" class="rounded-xl shadow w-40 h-56 object-cover">
-    </div>
-  </div>
 </section>
 
-    <!-- Footer -->
-   <footer id="contacto" class="bg-blue-800 text-white py-10 text-center">
-    <p>Contacto: +57 123 456 7890 | psiquetria@psiquevida.com</p>
-    <p>&copy; 2025 PsiqueVida. Todos los derechos reservados.</p>
-  </footer>
+    <footer class="bg-blue-600 text-white py-6">
+        <div class="container mx-auto text-center">
+        <p>&copy; 2025 Psiquiatría Practice. Todos los derechos reservados.</p>
+        <p>.</p>
+        </div>
+    </footer>
+</body>
+</html>
