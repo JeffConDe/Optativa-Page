@@ -19,23 +19,28 @@
 </head>
 <body class="bg-blue-50 text-gray-800">
   <!-- Navbar -->
-  <header class="bg-white shadow">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-blue-700">PsiqueVida</h1>
-      <nav class="space-x-6">
-        <a href="#" class="hover:text-blue-600">Inicio</a>
-        <a href="#servicios" class="hover:text-blue-600">Servicios</a>
-        <a href="#nosotros" class="hover:text-blue-600">Nosotros</a>
-        <a href="#contacto" class="hover:text-blue-600">Contacto</a>
-      </nav>
+  <header class="bg-white shadow sticky top-0 z-50">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <a href="./index.html" class="text-2xl font-bold text-blue-700">PsiqueVida</a>
+    <nav class="space-x-6 flex items-center">
+      <a href="./index.html" class="hover:text-blue-600">Inicio</a>
+      <a href="./Servicios.html" class="hover:text-blue-600">Servicios</a>
+      <a href="./Nosotros.html" class="hover:text-blue-600">Nosotros</a>
+      <a href="./Contacto.html" class="hover:text-blue-600">Contacto</a>
+      </a>
+    </nav>
+  </div>
+</header>
+<!-- Hero con imagen de fondo -->
+  <section class="relative bg-[url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80')] bg-cover bg-center bg-no-repeat py-20 text-center text-white">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    <div class="relative z-10 max-w-3xl mx-auto px-4">
+      <h2 class="text-4xl font-semibold mb-4">Cuidamos tu salud mental</h2>
+      <p class="text-lg mb-6">Profesionales en psiquiatría comprometidos con tu bienestar</p>
+      <a href="./Contacto.html" class="bg-blue-600 px-6 py-3 rounded hover:bg-blue-700 transition inline-block">
+        Solicitar Cita
+      </a>
     </div>
-  </header>
-
-  <!-- Hero -->
-  <section class="bg-blue-100 py-20 text-center">
-    <h2 class="text-4xl font-semibold text-blue-900 mb-4">Cuidamos tu salud mental</h2>
-    <p class="text-lg mb-6">Profesionales en psiquiatría comprometidos con tu bienestar</p>
-    <a href="#contacto" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Solicitar Cita</a>
   </section>
 
   <!-- Servicios -->
@@ -54,10 +59,50 @@
         <div class="bg-blue-50 p-6 rounded shadow hover:shadow-lg transition">
           <h4 class="text-xl font-semibold mb-2">Tratamientos</h4>
           <p>Opciones médicas con seguimiento constante.</p>
+          <a href="#" class="bg-[#0082c8] text-white px-6 py-2 rounded-full font-medium hover:bg-[#005f8c] transition">Ver más</a>
         </div>
       </div>
     </div>
   </section>
+
+
+  <!-- Info -->
+
+  <section id="importancia" class="py-16 bg-blue-50">
+  <div class="container mx-auto px-4">
+    <h3 class="text-3xl font-bold text-center text-blue-800 mb-12">¿Por qué es importante la psiquiatría?</h3>
+    
+    <div class="max-w-4xl mx-auto space-y-8 text-gray-700">
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Salud integral</h4>
+        <p>Destaca que la salud mental es tan importante como la salud física. Una no puede estar completa sin la otra. Los problemas de salud mental afectan la forma en que pensamos, sentimos y actuamos, impactando directamente nuestra calidad de vida, relaciones y capacidad para funcionar en el día a día.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Prevalencia de los trastornos mentales</h4>
+        <p>Es crucial informar que los trastornos mentales son más comunes de lo que se cree. Muchas personas experimentan en algún momento de sus vidas condiciones como ansiedad, depresión, trastornos del sueño, estrés postraumático, entre otros.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Acceso a tratamiento</h4>
+        <p>El acceso a tratamientos psiquiátricos adecuados puede marcar una gran diferencia en la vida de una persona. La psiquiatría ofrece herramientas y recursos para ayudar a las personas a manejar sus síntomas y mejorar su calidad de vida.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Impacto en la sociedad</h4>
+        <p>Los problemas de salud mental no solo afectan al individuo, sino que también tienen un impacto significativo en la familia, el trabajo y la sociedad en general (ausentismo laboral, disminución de la productividad, problemas sociales).</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Romper el estigma</h4>
+        <p>Subraya la importancia de buscar ayuda profesional sin vergüenza ni temor. La psiquiatría ofrece un espacio seguro y confidencial para abordar estas problemáticas. Informa que los trastornos mentales son condiciones médicas tratables, al igual que las enfermedades físicas.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Prevención y detección temprana</h4>
+        <p>La psiquiatría también juega un papel importante en la prevención de problemas de salud mental y en la detección temprana de trastornos, lo que puede mejorar significativamente el pronóstico y la calidad de vida.</p>
+      </div>
+  </div>
+</section>
+
+
+  <!-- Nosotros -->
+
 
   <!-- Footer -->
   <footer id="contacto" class="bg-blue-800 text-white py-10 text-center">
