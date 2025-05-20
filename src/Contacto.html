@@ -22,88 +22,9 @@
     </div>
   </header>
 
-  <!-- Formulario Estilo Moderno -->
-  <main class="py-12 px-4">
-    <section class="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg p-8">
-      <h2 class="text-2xl font-semibold mb-8 text-center text-gray-800">Formulario de Solicitud de Cita Médica</h2>
-      <form action="#" method="POST">
-        <div class="grid md:grid-cols-2 gap-8">
-          <!-- Información del Paciente -->
-          <div class="bg-blue-50 rounded-xl p-6 shadow">
-            <h3 class="text-lg font-bold mb-4 text-blue-700 flex items-center">
-              <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 15c2.485 0 4.824.635 6.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-              Información del Paciente
-            </h3>
-            <div class="space-y-4">
-              <div>
-                <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" required
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
-              </div>
-              <div>
-                <label for="cedula" class="block text-sm font-medium text-gray-700">Cédula</label>
-                <input type="text" id="cedula" name="cedula" required
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
-              </div>
-              <div>
-                <label for="telefono" class="block text-sm font-medium text-gray-700">Teléfono</label>
-                <input type="tel" id="telefono" name="telefono" required
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
-              </div>
-              <div>
-                <label for="correo" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
-                <input type="email" id="correo" name="correo" required
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
-              </div>
-              <div>
-                <label for="motivo" class="block text-sm font-medium text-gray-700">Motivo de la consulta</label>
-                <textarea id="motivo" name="motivo" rows="2" required
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
-              </div>
-            </div>
-          </div>
 
-          <!-- Información del Seguro -->
-          <div class="bg-blue-50 rounded-xl p-6 shadow">
-            <h3 class="text-lg font-bold mb-4 text-blue-700 flex items-center">
-              <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2a4 4 0 018 0v2m-4-6a4 4 0 100-8 4 4 0 000 8z" /></svg>
-              Información del Seguro
-            </h3>
-            <div class="space-y-4">
-              <div>
-                <label for="aseguradora" class="block text-sm font-medium text-gray-700">Aseguradora</label>
-                <input type="text" id="aseguradora" name="aseguradora"
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
-              </div>
-              <div>
-                <label for="numero-poliza" class="block text-sm font-medium text-gray-700">Número de póliza</label>
-                <input type="text" id="numero-poliza" name="numero-poliza"
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
-              </div>
-              <div>
-                <label for="tipo-cobertura" class="block text-sm font-medium text-gray-700">Tipo de cobertura</label>
-                <input type="text" id="tipo-cobertura" name="tipo-cobertura"
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500">
-              </div>
-              <div>
-                <label for="comentarios" class="block text-sm font-medium text-gray-700">Comentarios adicionales</label>
-                <textarea id="comentarios" name="comentarios" rows="2"
-                  class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500"></textarea>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mt-8 flex justify-center">
-          <button type="submit"
-            class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold shadow hover:bg-black transition">
-            Solicitar Cita
-          </button>
-        </div>
-      </form>
-    </section>
-  </main>
-
-  <footer class="bg-gray-800 text-white text-center p-4 mt-10">
+  <footer id="contacto" class="bg-blue-800 text-white py-10 text-center">
+    <p>Contacto: +57 123 456 7890 | psiquetria@psiquevida.com</p>
     <p>&copy; 2025 PsiqueVida. Todos los derechos reservados.</p>
   </footer>
 </body>
